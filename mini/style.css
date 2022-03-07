@@ -14,7 +14,7 @@
     grid-column-gap: 1em;
     grid-row-gap: 1em;
 }
-.item{
+.item {
     background-color:rgb(119, 117, 117);
     padding: 2em;
     border-radius: 1em;
@@ -23,7 +23,7 @@
     align-items:center;
     justify-content:center;
 }
-.sc_container{
+/* .sc_container{
     
-}
+} */
   
