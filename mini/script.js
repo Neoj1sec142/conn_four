@@ -1,13 +1,10 @@
 // Below will contain the main variables within the JS code
 const resetB = document.querySelector('#reset')
 const sqs = document.querySelectorAll('.item')
+let player = 0
+let player2 = 1
+let score = ['','','','','']
 
-
-//console.log(sq0)
-// const sq1 = document.querySelector('#box1')
-// const sq2 = document.querySelector('#box2')
-// const sq3 = document.querySelector('#box3')
-// const allSq = [sq0, sq1, sq2, sq3]
 
 ///////
 // Below will contain the functions used for game functionality
@@ -16,7 +13,7 @@ reload = () => {
     reload = location.reload();
 }
 
-
+//Function to alternate players
 changePl = () => {
     if (player % 2 == 0){
         player++;
@@ -29,14 +26,16 @@ changePl = () => {
 ////////
 // Below will hold eventlisters and their respective assignment
 
-for(let i = 0; i <= 3; i++){
-    sqs[i].addEventListener('click', () => {
-        console.log('click')
-    })
-        
-}
+// for(let i = 0; i <= 3; i++){
+//     sqs[i].addEventListener('click', () => {
+//         console.log('click')
+//     })
+// }
+sqs[0].addEventListener('click', () =>{
+    console.log('hey')
+})
 
-//resetB.addEventListener('click',reload, false);
+resetB.addEventListener('click',reload, false);
 //////
 
 
