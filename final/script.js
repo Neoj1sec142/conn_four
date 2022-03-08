@@ -1,10 +1,19 @@
+/////////////////////////////////////////////////////////////////////////////////
 ///The Below Function waits for the page to load the DOM content before proceeding
+/////////////////////////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
-    /// Storeing Global Variables for the Game
+    //////////////////////////////
+    /// GLOBAL VARIABLES FOR GAME:
+    //////////////////////////////
+    //var grabbing all square divs in the grid class
     const allsq = document.querySelectorAll('.grid div')
+    //var grabbing the winning message slot
     const winner = document.querySelector('#winner')
+    //var grabbing the current player
     const disCpl = document.querySelector('#cpl')
-    //variable storing the current player being 1 
+    //var grabbing the reset button
+    const resetB = document.querySelector('#reset')
+    //variable storing the current player starting at = 1 
     let cpl = 1
     // and array of all possible winning combinations
     const winningCombos = [
@@ -78,8 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
         [12, 19, 26, 33],
         [13, 20, 27, 34],
     ]
+    /////////////////////
+    //FUNCTIONS/////////
+    /////////////////////
     //this function checks the board for winning combos
-    function checkBoard() {
+    function checkWin() {
         for(let x=0; x < winningCombos.length; x++){
             //variables for each square of the winning array
             const sq1 = allsq[winningCombos[x][0]]
@@ -102,25 +114,48 @@ document.addEventListener('DOMContentLoaded', () => {
         ///check squares to see if they all have class of player one
         
     }
+    //function to reset game
+    reload = () => {
+        reload = location.reload();
+    }
+    /////////////////////
+    //EVENT LISTENERS:
+    /////////////////////
+    //adding event listener to my reset button
+    resetB.addEventListener('click',reload, false);
+    //adding a for loop to run through each sq
     for(let i = 0; i < allsq.length; i++){
+        //adding onclick eventlistener for all squares
         allsq[i].onclick = () => {
-            //alert(`you have clicked square ` + i);
-            //if square below current square is taken you can only go on top of it
+            //if else statement to run game 
+            //you can only choose a square if the one below = invaild
+            //invalid meaning the square is already full
+            
             if (allsq[i + 7].classList.contains('invalid')){
+                //if current player = pl1
                 if(cpl == 1){
+                    //add the invalid to the square to disqualify square for future use
                     allsq[i].classList.add('invalid')
+                    //add the current players color to the square on board
                     allsq[i].classList.add('plone')
+                    //change players
                     cpl = 2
+                    //change the display of whos turn it is
                     disCpl.innerHTML = cpl
-                    checkBoard()
+                    //check the board for winniner
+                    checkWin()
                 }else if (cpl == 2){
                     allsq[i].classList.add('invalid')
                     allsq[i].classList.add('pltwo')
                     cpl = 1
                     disCpl.innerHTML = cpl
-                    checkBoard()
+                    checkWin()
                 }
+            //alert to tell you to choose another slot if square is not chooseable
             }else {alert('Choose another slot')}
         }
     }
 })
+
+
+
