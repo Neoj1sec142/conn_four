@@ -75,14 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
     /////////////////////
     //adding event listener to my reset button
     resetB.addEventListener('click',reload, false);
-    //adding a for loop to run through each sq
+    //using a for loop to run through each sq
     for(let i = 0; i < allsq.length; i++){
         //adding onclick eventlistener for all squares
         allsq[i].onclick = () => {
             //if else statement to run game 
             //you can only choose a square if the one below = invaild
             //invalid meaning the square is already full
-            
             if (allsq[i + 7].classList.contains('invalid')){
                 //if current player = pl1
                 if(cpl == 1){
