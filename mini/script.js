@@ -1,9 +1,14 @@
 // Below will contain the main variables within the JS code
-const resetB = document.querySelector('#reset')
-const sqs = document.querySelectorAll('.item')
-let player = 0
-let player2 = 1
-let score = ['','','','','']
+const squares = document.querySelectorAll('.grid div')
+const result = document.querySelector('#result')
+const displayCurrentPlayer = document.querySelector('#current-player')
+let currentPlayer = 1
+
+// const resetB = document.querySelector('#reset')
+// const sqs = document.querySelectorAll('.item')
+// let player = 0
+// let player2 = 1
+// let score = ['','','','','']
 
 
 ///////
@@ -26,14 +31,11 @@ changePl = () => {
 ////////
 // Below will hold eventlisters and their respective assignment
 
-// for(let i = 0; i <= 3; i++){
-//     sqs[i].addEventListener('click', () => {
-//         console.log('click')
-//     })
-// }
-sqs[0].addEventListener('click', () =>{
-    console.log('hey')
-})
+for(let i = 0; i <= 3; i++){
+    sqs[i].addEventListener('click', () => {
+        console.log('click')
+    })
+}         
 
 resetB.addEventListener('click',reload, false);
 //////
