@@ -2,23 +2,26 @@
 ///The Below Function waits for the page to load the DOM content before proceeding
 /////////////////////////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
-    //////////////////////////////
-    /// GLOBAL VARIABLES FOR GAME:
-    //////////////////////////////
-    //var grabbing all square divs in the grid class
+    //////////////////////////////////////////////////////
+    //////// GLOBAL VARIABLES FOR GAME: //////////////////
+    //////////////////////////////////////////////////////
+    //var grabbing all square divs in the grid class//////
     const allsq = document.querySelectorAll('.grid div')
-    //var grabbing the winning message slot
+    //var grabbing the winning message slot///////////////
     const winner = document.querySelector('#winner')
-    //var grabbing the current player
+    //var grabbing the current player/////////////////////
     const disCpl = document.querySelector('#cpl')
-    //var grabbing the reset button
+    //var grabbing the reset button///////////////////////
     const resetB = document.querySelector('#reset')
-    //variable storing the current player starting at = 1 
+    //variable storing the current player starting at = 1/
     let cpl = 1
-    //add two variable to hold the score for each player after the game unless reset
+    //add two variable to hold the score for each player// 
+    //after the game unless reset/////////////////////////
+    const displayOneSc = document.getElementById('one')
+    const displayTwoSc = document.getElementById('two')
     let playerOneScore = 0
     let playerTwoScore = 0
-    // and array of all possible winning combinations
+    // and array of all possible winning combinations/////
     const winningCombos = [
         [0, 1, 2, 3], [41, 40, 39, 38], [7, 8, 9, 10], [34, 33, 32, 31],
         [14, 15, 16, 17], [27, 26, 25, 24], [21, 22, 23, 24], [20, 19, 18, 17],
@@ -39,10 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
         [9, 16, 23, 30], [10, 17, 24, 31], [11, 18, 25, 32], [12, 19, 26, 33],
         [13, 20, 27, 34]
     ]
-    /////////////////////
-    //FUNCTIONS/////////
-    /////////////////////
-    //this function checks the board for winning combos
+    //////////////////////////////////////////////////////
+    ///////////////////// FUNCTIONS: /////////////////////
+    //////////////////////////////////////////////////////
+    //this function checks the board for winning combos //
     function checkWin() {
         for(let x=0; x < winningCombos.length; x++){
             //variables for each square of the winning arrays
@@ -64,24 +67,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 sq3.classList.contains('pltwo') &&
                 sq4.classList.contains('pltwo')){
                 winner.innerHTML = 'Player Two You Win!!'
-                return playerTwoScore++  
+                return playerTwoScore++ 
             }
         }
+    
     }
-    //function to reset game
+    //function to reset game//////////////////////////////
     reload = () => {
         reload = location.reload();
     }
-    /////////////////////
-    //EVENT LISTENERS:
-    /////////////////////
-    //adding event listener to my reset button
+    //////////////////////////////////////////////////////
+    ////////////////// EVENT LISTENERS: //////////////////
+    //////////////////////////////////////////////////////
+    //adding event listener to my reset button////////////
     resetB.addEventListener('click',reload, false);
-    //using a for loop to run through each sq
+    //using a for loop to run through each sq/////////////
     for(let i = 0; i < allsq.length; i++){
         //adding onclick eventlistener for all squares
         allsq[i].onclick = () => {
-            //if else statement to run game 
+            //if else statement to run through game sequence
             //you can only choose a square if the one below = invaild
             //invalid meaning the square is already full
             if (allsq[i + 7].classList.contains('invalid')){
