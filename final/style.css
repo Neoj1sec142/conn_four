@@ -6,13 +6,19 @@ body{
     height: 490px;
     width: 574px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 .grid div {
     height: 80px;
     width: 80px;
 }
-
+.sc{
+    display: flex;
+    text-align: center;
+    background-color: white;
+    height: 60px;
+    width: 380px;
+}
 .plone {
     background-color: rgb(43, 179, 2);
     border-radius: 10px;

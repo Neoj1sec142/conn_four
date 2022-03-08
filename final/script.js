@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const resetB = document.querySelector('#reset')
     //variable storing the current player starting at = 1 
     let cpl = 1
+    //add two variable to hold the score for each player after the game unless reset
+    let playerOneScore = 0
+    let playerTwoScore = 0
     // and array of all possible winning combinations
     const winningCombos = [
         [0, 1, 2, 3], [41, 40, 39, 38], [7, 8, 9, 10], [34, 33, 32, 31],
