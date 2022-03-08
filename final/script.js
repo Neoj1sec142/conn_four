@@ -45,26 +45,26 @@ document.addEventListener('DOMContentLoaded', () => {
     //this function checks the board for winning combos
     function checkWin() {
         for(let x=0; x < winningCombos.length; x++){
-            //variables for each square of the winning array
+            //variables for each square of the winning arrays
             const sq1 = allsq[winningCombos[x][0]]
             const sq2 = allsq[winningCombos[x][1]]
             const sq3 = allsq[winningCombos[x][2]]
             const sq4 = allsq[winningCombos[x][3]]
             ///check if the board reaches any winning combos 
+            //by seeing if the class of any of the squares that
+            //are 4 in a row have one player to determine connect 4
             if (sq1.classList.contains('plone') &&
                 sq2.classList.contains('plone') &&
                 sq3.classList.contains('plone') &&
                 sq4.classList.contains('plone')){
-                winner.innerHTML = 'Player Two You Win'
+                winner.innerHTML = 'Player One You Win'
             }else if(sq1.classList.contains('pltwo') &&
                 sq2.classList.contains('pltwo') &&
                 sq3.classList.contains('pltwo') &&
                 sq4.classList.contains('pltwo')){
-                winner.innerHTML = 'Player One You Win!!'  
+                winner.innerHTML = 'Player Two You Win!!'  
             }
         }
-        ///check squares to see if they all have class of player one
-        
     }
     //function to reset game
     reload = () => {

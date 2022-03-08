@@ -1,6 +1,7 @@
 body{
     background-image: url('https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg');
 }
+
 .grid {
     border: 10px solid rgb(245, 242, 242);
     height: 490px;
@@ -15,9 +16,10 @@ body{
 .sc{
     display: flex;
     text-align: center;
-    background-color: white;
+    color: white;
+    background-color: rgba(138, 131, 131, 0.69);
     height: 60px;
-    width: 380px;
+    width: 280px;
 }
 .plone {
     background-color: rgb(43, 179, 2);
@@ -35,4 +37,13 @@ h2{
     text-align: center;
     color: white;
     border-bottom: 1px solid white;
+}
+#scBmessage{
+    margin-bottom: -25px;
+}
+#one{
+    margin-bottom: -25px;
+}
+#two{
+    margin-bottom: -25px;
 }
