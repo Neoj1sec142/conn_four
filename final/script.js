@@ -93,6 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     cpl = 2
                     //change the display of whos turn it is
                     disCpl.innerHTML = cpl
+                    //remove event listener
+                    allsq[i].onclick = null
                     //check the board for winniner
                     checkWin()
                 }else if (cpl == 2){
@@ -100,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     allsq[i].classList.add('pltwo')
                     cpl = 1
                     disCpl.innerHTML = cpl
+                    allsq[i].onclick = null
                     checkWin()
                 }
             //alert to tell you to choose another slot if square is not chooseable
