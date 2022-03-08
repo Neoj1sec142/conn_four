@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let playerOneScore = 0
     let playerTwoScore = 0
     // and array of all possible winning combinations
-    const winCombos = [
+    const winningCombos = [
         [0, 1, 2, 3], [41, 40, 39, 38], [7, 8, 9, 10], [34, 33, 32, 31],
         [14, 15, 16, 17], [27, 26, 25, 24], [21, 22, 23, 24], [20, 19, 18, 17],
         [28, 29, 30, 31], [13, 12, 11, 10], [35, 36, 37, 38], [6, 5, 4, 3],
@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkWin() {
         for(let x=0; x < winningCombos.length; x++){
             //variables for each square of the winning arrays
-            const sq1 = allsq[winCombos[x][0]]
-            const sq2 = allsq[winCombos[x][1]]
-            const sq3 = allsq[winCombos[x][2]]
-            const sq4 = allsq[winCombos[x][3]]
+            const sq1 = allsq[winningCombos[x][0]]
+            const sq2 = allsq[winningCombos[x][1]]
+            const sq3 = allsq[winningCombos[x][2]]
+            const sq4 = allsq[winningCombos[x][3]]
             ///check if the board reaches any winning combos 
             //by seeing if the class of any of the squares that
             //are 4 in a row have one player to determine connect 4
@@ -93,16 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     cpl = 2
                     //change the display of whos turn it is
                     disCpl.innerHTML = cpl
-                    //remove event listener
-                    allsq[i].onclick = null
                     //check the board for winniner
                     checkWin()
+                    //remove event listener
+                    // allsq[i].onclick = null
                 }else if (cpl == 2){
                     allsq[i].classList.add('invalid')
                     allsq[i].classList.add('pltwo')
                     cpl = 1
                     disCpl.innerHTML = cpl
-                    allsq[i].onclick = null
                     checkWin()
                 }
             //alert to tell you to choose another slot if square is not chooseable

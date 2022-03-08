@@ -7,11 +7,14 @@ body{
     height: 490px;
     width: 574px;
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap; 
+     
 }
 .grid div {
+    border: 1px solid black;
     height: 80px;
     width: 80px;
+
 }
 .sc{
     display: flex;
@@ -44,6 +47,5 @@ h2{
     color: rgb(121, 4, 111);
 }
 #two{
-    color:  rgb(63, 44, 236);
-    
+    color:  rgb(63, 44, 236);  
 }
