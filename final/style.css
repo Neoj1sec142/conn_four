@@ -3,7 +3,7 @@ body{
 }
 
 .grid {
-    border: 10px solid rgb(245, 242, 242);
+    border: 10px solid rgb(245, 242, 242, .5);
     height: 490px;
     width: 574px;
     display: flex;
