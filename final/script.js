@@ -58,11 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 sq3.classList.contains('plone') &&
                 sq4.classList.contains('plone')){
                 winner.innerHTML = 'Player One You Win'
+                return playerOneScore++
             }else if(sq1.classList.contains('pltwo') &&
                 sq2.classList.contains('pltwo') &&
                 sq3.classList.contains('pltwo') &&
                 sq4.classList.contains('pltwo')){
-                winner.innerHTML = 'Player Two You Win!!'  
+                winner.innerHTML = 'Player Two You Win!!'
+                return playerTwoScore++  
             }
         }
     }
@@ -96,13 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     //check the board for winniner
                     checkWin()
                     //remove event listener
-                    // allsq[i].onclick = null
+                    allsq[i].onclick = null
                 }else if (cpl == 2){
                     allsq[i].classList.add('invalid')
                     allsq[i].classList.add('pltwo')
                     cpl = 1
-                    disCpl.innerHTML = cpl
+                    disCpl.innerHTML = cpl 
                     checkWin()
+                    allsq[i].onclick = null
                 }
             //alert to tell you to choose another slot if square is not chooseable
             }else {alert('Choose another slot')}
