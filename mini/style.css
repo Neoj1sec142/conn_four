@@ -35,5 +35,13 @@
     height: 75px;
     background-color: black;
 }
+.plOne {
+    background-color: red;
+    border-radius: 10px;
+}
+.plTwo {
+    background-color: blue;
+    border-radius: 10px;
+}
 
   
