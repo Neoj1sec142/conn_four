@@ -1,8 +1,12 @@
+///The Below Function waits for the page to load the DOM content before proceeding
 document.addEventListener('DOMContentLoaded', () => {
+    /// Storeing Global Variables for the Game
     const allsq = document.querySelectorAll('.grid div')
     const winner = document.querySelector('#winner')
     const disCpl = document.querySelector('#cpl')
+    //variable storing the current player being 1 
     let cpl = 1
+    // and array of all possible winning combinations
     const winningCombos = [
         [0, 1, 2, 3],
         [41, 40, 39, 38],
@@ -74,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         [12, 19, 26, 33],
         [13, 20, 27, 34],
     ]
-
+    //this function checks the board for winning combos
     function checkBoard() {
         for(let x=0; x < winningCombos.length; x++){
             //variables for each square of the winning array
@@ -87,12 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 sq2.classList.contains('plone') &&
                 sq3.classList.contains('plone') &&
                 sq4.classList.contains('plone')){
-                winner.innerHTML = 'player one wins'
+                winner.innerHTML = 'Player Two You Win'
             }else if(sq1.classList.contains('pltwo') &&
                 sq2.classList.contains('pltwo') &&
                 sq3.classList.contains('pltwo') &&
                 sq4.classList.contains('pltwo')){
-                winner.innerHTML = 'player one wins'  
+                winner.innerHTML = 'Player One You Win!!'  
             }
         }
         ///check squares to see if they all have class of player one
@@ -107,13 +111,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     allsq[i].classList.add('invalid')
                     allsq[i].classList.add('plone')
                     cpl = 2
-                    disCpl.innerHTML = currentPlayer
+                    disCpl.innerHTML = cpl
                     checkBoard()
                 }else if (cpl == 2){
                     allsq[i].classList.add('invalid')
                     allsq[i].classList.add('pltwo')
                     cpl = 1
-                    disCpl.innerHTML = currentPlayer
+                    disCpl.innerHTML = cpl
                     checkBoard()
                 }
             }else {alert('Choose another slot')}

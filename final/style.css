@@ -1,19 +1,28 @@
+body{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg');
+}
 .grid {
-    border: 1px solid black;
-    height: 120px;
-    width: 140px;
+    border: 10px solid rgb(245, 242, 242);
+    height: 490px;
+    width: 574px;
     display: flex;
     flex-wrap: wrap;
 }
 .grid div {
-    height: 20px;
-    width: 20px;
+    height: 80px;
+    width: 80px;
 }
+
 .plone {
-    background-color: red;
+    background-color: rgb(43, 179, 2);
     border-radius: 10px;
 }
 .pltwo {
-    background-color: blue;
+    background-color: white;
     border-radius: 10px;
+}
+h1{
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
 }
