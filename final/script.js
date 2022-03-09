@@ -185,7 +185,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }else {alert('Choose another slot')}
         }
     }
-    
+    //adding event listener to clear score button/////////
+    clear.onclick = () => {
+        playerOneScore = 0;
+        playerTwoScore = 0;
+        displayOneSc.innerText = `Player One: ${playerOneScore}`
+        displayTwoSc.innerText = `Player Two: ${playerOneScore}`
+    }
 })
 
 
