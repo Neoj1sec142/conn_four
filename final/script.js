@@ -84,7 +84,78 @@ document.addEventListener('DOMContentLoaded', () => {
     ////////////////// EVENT LISTENERS: //////////////////
     //////////////////////////////////////////////////////
     //adding event listener to my reset button////////////
-    
+    resetB.onclick = () => {
+        for(let i=0; i<allsq.length; i++){
+            if(allsq[i].classList.contains('plone')){
+                allsq[i].classList.remove('plone', 'invalid')
+                allsq[i].onclick = () => {
+                    //if else statement to run through game sequence
+                    //you can only choose a square if the one below = invaild
+                    //invalid meaning the square is already full 
+                    if (allsq[i + 7].classList.contains('invalid')){
+                        //if current player = pl1
+                        if(cpl == 1){
+                            //add the invalid to the square to disqualify square for future use
+                            allsq[i].classList.add('invalid')
+                            //add the current players color to the square on board
+                            allsq[i].classList.add('plone')
+                            //change players
+                            cpl = 2
+                            //change the display of whos turn it is
+                            disCpl.innerHTML = cpl
+                            //check the board for winniner
+                            checkWin()
+                            //remove event listener
+                            allsq[i].onclick = null
+                        }else if (cpl == 2){
+                            allsq[i].classList.add('invalid')
+                            allsq[i].classList.add('pltwo')
+                            cpl = 1
+                            disCpl.innerHTML = cpl 
+                            checkWin()
+                            allsq[i].onclick = null
+                        }
+                    //alert to tell you to choose another slot if square is not chooseable
+                    }else {alert('Choose another slot')}
+                }
+            }else if(allsq[i].classList.contains('pltwo')){
+                allsq[i].classList.remove('pltwo', 'invalid')
+                allsq[i].onclick = () => {
+                    //if else statement to run through game sequence
+                    //you can only choose a square if the one below = invaild
+                    //invalid meaning the square is already full 
+                    if (allsq[i + 7].classList.contains('invalid')){
+                        //if current player = pl1
+                        if(cpl == 1){
+                            //add the invalid to the square to disqualify square for future use
+                            allsq[i].classList.add('invalid')
+                            //add the current players color to the square on board
+                            allsq[i].classList.add('plone')
+                            //change players
+                            cpl = 2
+                            //change the display of whos turn it is
+                            disCpl.innerHTML = cpl
+                            //check the board for winniner
+                            checkWin()
+                            //remove event listener
+                            allsq[i].onclick = null
+                        }else if (cpl == 2){
+                            allsq[i].classList.add('invalid')
+                            allsq[i].classList.add('pltwo')
+                            cpl = 1
+                            disCpl.innerHTML = cpl 
+                            checkWin()
+                            allsq[i].onclick = null
+                        }
+                    //alert to tell you to choose another slot if square is not chooseable
+                    }else {alert('Choose another slot')}
+                }
+            } 
+            
+            // allsq[i].classList.remove('plone', 'pltwo', 'invalid')
+            // winner.innerHTML = null;
+        }
+    }
     //using a for loop to run through each sq/////////////
     for(let i = 0; i < allsq.length; i++){
         //adding onclick eventlistener for all squares
@@ -119,13 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }else {alert('Choose another slot')}
         }
     }
-    resetB.onclick = () => {
-        for(let i=0; i<allsq.length; i++){
-            //allsq[i].classList.remove('invalid', 'plone', 'pltwo')
-            allsq[i].classList = null;
-            winner.innerHTML = null;
-        }
-    }
+    
 })
 
 
