@@ -157,6 +157,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (allsq[i + 7].classList.contains('invalid')){
                 //if current player = pl1
                 if(cpl == 1){
+                    //possibleadd inner html
+                    allsq[i].innerHTML = '0'
                     //add the invalid to the square to disqualify square for future use
                     allsq[i].classList.add('invalid')
                     //add the current players color to the square on board
@@ -170,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     //remove event listener
                     allsq[i].onclick = null
                 }else if (cpl == 2){
+                    allsq[i].innerHTML = '1'
                     allsq[i].classList.add('invalid')
                     allsq[i].classList.add('pltwo')
                     cpl = 1

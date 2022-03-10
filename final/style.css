@@ -1,6 +1,8 @@
 body{
     opacity: 150%;
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg');
+    background-image: url('https://i.pinimg.com/originals/13/31/20/13312045ba691fcb8d1fbae330d937e0.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .grid {
@@ -30,7 +32,10 @@ body{
     margin-right: 25%;
 }
 .plone {
-    background-color: rgb(121, 4, 111);
+    text-align: center;
+    font-size: 4em;
+    color:rgb(22, 250, 14);
+    background-color: rgba(1, 0, 5, 0.315);
     border-radius: 10px;
     animation-name: fall-animation;
     animation-duration: 500ms;
@@ -45,7 +50,10 @@ body{
     
 }
 .pltwo {
-    background-color: rgb(63, 44, 236);
+    text-align: center;
+    font-size: 4em;
+    color:rgb(22, 250, 14);
+    background-color: rgba(1, 0, 5, 0.315);
     border-radius: 10px;
     animation-name: fall-animation;
     animation-duration: 500ms;
