@@ -1,0 +1,17 @@
+
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTipVtF_8VQEmRqG214IbBOyhKTftbRo_L8pA&usqp=CAU');
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+.message{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 3em;
+}
+#button{
+    display: flex;
+    color: whitesmoke;
+    margin-left: 35%;
+    margin-right: 35%;
+}
