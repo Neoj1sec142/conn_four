@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ///////////////////// FUNCTIONS: /////////////////////
     //////////////////////////////////////////////////////
     //this function checks the board for winning combos //
+    ///////then applies winning attributes ///////////////
     function checkWin() {
         for(let x=0; x < winningCombos.length; x++){
             //variables for each square of the winning arrays
@@ -76,13 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 displayTwoSc.innerText = `Player Two: ${playerTwoScore}`
             }
         }
-    
     }
-    
     //////////////////////////////////////////////////////
     ////////////////// EVENT LISTENERS: //////////////////
     //////////////////////////////////////////////////////
-    //adding event listener to my reset button////////////
+    //////adding event listener to my reset button////////
     resetB.onclick = () => {
         //remove the winning message
         winner.innerHTML = null;
@@ -145,9 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     }else {alert('Choose another slot')}
                 }
             } 
-            
-            // allsq[i].classList.remove('plone', 'pltwo', 'invalid')
-            // winner.innerHTML = null;
         }
     }
     //adding event listeners and game functionality to each square
