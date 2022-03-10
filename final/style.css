@@ -13,6 +13,7 @@ body{
     flex-wrap: wrap;
     margin-left: 30%; 
     margin-right: 50%;
+    margin-bottom: 50px;
 }
 .grid div {
     /* border: 1px solid black; */
@@ -23,7 +24,8 @@ body{
     display: flex;
     text-align: center;
     color: white;
-    background-color: rgba(194, 188, 188, 0.69);
+    border-radius: 10px;
+    background-color: rgba(194, 188, 188, 0.377);
     height: 60px;
     width: 280px;
     margin-bottom: -25px;
