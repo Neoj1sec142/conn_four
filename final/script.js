@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 allsq[i].onclick = () => {
                     if (allsq[i + 7].classList.contains('invalid')){
                         if(cpl == 1){
+                            allsq[i].innerHTML = '0'
                             allsq[i].classList.add('invalid')
                             allsq[i].classList.add('plone')
                             cpl = 2
@@ -100,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             checkWin()
                             allsq[i].onclick = null
                         }else if (cpl == 2){
+                            allsq[i].innerHTML = '1'
                             allsq[i].classList.add('invalid')
                             allsq[i].classList.add('pltwo')
                             cpl = 1
@@ -120,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (allsq[i + 7].classList.contains('invalid')){
                         //if current player = pl1
                         if(cpl == 1){
+                            allsq[i].innerHTML = '0'
                             //add the invalid to the square to disqualify square for future use
                             allsq[i].classList.add('invalid')
                             //add the current players color to the square on board
@@ -133,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             //remove event listener
                             allsq[i].onclick = null
                         }else if (cpl == 2){
+                            allsq[i].innerHTML = '1'
                             allsq[i].classList.add('invalid')
                             allsq[i].classList.add('pltwo')
                             cpl = 1
