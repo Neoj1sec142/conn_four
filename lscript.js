@@ -1,10 +1,10 @@
-const light = document.querySelector('#light')
-const dark = document.querySelector('#dark')
-
+const light = document.getElementById('light')
+const dark = document.getElementById('dark')
+const body = document.body
 function lighten () {
-    document.body.style.backgroundColor = 'white';
+    body.style.backgroundColor = 'white';
 }
 function darken () {
-    document.body.style.backgroundColor = ""; 
+    body.style.backgroundColor = ""; 
 }
 
