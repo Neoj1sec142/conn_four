@@ -7,6 +7,7 @@ body{
 
 .grid {
     border: 10px solid rgb(245, 242, 242, .5);
+    border-radius: 12px;
     height: 490px;
     width: 574px;
     display: flex;
@@ -25,7 +26,7 @@ body{
     text-align: center;
     color: white;
     border-radius: 10px;
-    background-color: rgba(194, 188, 188, 0.377);
+    background-color: rgba(194, 188, 188, 0.205);
     height: 60px;
     width: 280px;
     margin-bottom: -25px;
@@ -79,14 +80,16 @@ h2{
     border-bottom: 1px solid white;
 }
 #one{
-    color: rgb(121, 4, 111);
+    color: rgb(241, 10, 222);
+    font-size: 20px;
 }
 #two{
-    color:  rgb(63, 44, 236);  
+    color:  rgb(44, 127, 236); 
+    font-size: 20px; 
 }
 #reset{
     border-radius: 10px;
-    background-color: blueviolet;
+    background-color: rgba(1, 0, 2, 0.726);
     color: white;
     margin-left: 39%; 
     margin-right: 35%;
@@ -99,7 +102,7 @@ h2{
 #clear{
     display: flex;
     flex-direction: row;
-    background-color: blueviolet;
+    background-color: rgba(1, 0, 2, 0.726);
     color: white;
     border-radius: 10px;
     margin-left: 48%;
@@ -110,4 +113,8 @@ h2{
 #clear:hover{
     background-color: rgb(155, 250, 14);
     color: rgb(63, 2, 119);   
+}
+#scBmessage{
+    font-size: 22px;
+    text-decoration: wavy;
 }
