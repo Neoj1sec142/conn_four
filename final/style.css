@@ -1,4 +1,5 @@
 body{
+    opacity: 150%;
     background-image: url('https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg');
 }
 
@@ -8,15 +9,13 @@ body{
     width: 574px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 25%; 
+    margin-left: 32%; 
     margin-right: 25%;
 }
 .grid div {
-    border: 1px solid black;
-
+    /* border: 1px solid black; */
     height: 80px;
     width: 80px;
-
 }
 .sc{
     display: flex;
@@ -27,16 +26,38 @@ body{
     width: 280px;
     margin-bottom: -25px;
     text-decoration: underline;
-    margin-left: 35%; 
-    margin-right: 35%;
+    margin-left: 39%; 
+    margin-right: 25%;
 }
 .plone {
     background-color: rgb(121, 4, 111);
     border-radius: 10px;
+    animation-name: fall-animation;
+    animation-duration: 500ms;
+}
+@keyframes fall-animation {
+    from{
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
 }
 .pltwo {
     background-color: rgb(63, 44, 236);
     border-radius: 10px;
+    animation-name: fall-animation;
+    animation-duration: 500ms;
+}
+@keyframes fall-animation {
+    from{
+        transform: translateY(-500px);
+    }
+    to{
+        transform: translateY(0);
+    }
+    
 }
 h1{
     color: white;
@@ -54,10 +75,10 @@ h2{
     color:  rgb(63, 44, 236);  
 }
 #reset{
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: blueviolet;
     color: white;
-    margin-left: 36%; 
+    margin-left: 39%; 
     margin-right: 35%;
 }
 #reset:hover{
@@ -69,13 +90,12 @@ h2{
     display: flex;
     flex-direction: row;
     background-color: blueviolet;
-    
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-left: 48%;
     margin-right: 55%;
     margin-top: -30px;
-    
+    max-width: fit-content;
 }
 #clear:hover{
     background-color: rgb(155, 250, 14);
