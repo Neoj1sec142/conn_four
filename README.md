@@ -51,10 +51,10 @@
 * [x] move to styling
 ***
 ### FRI
-* [] confirm game is functioning properly again 
-* [] complete styling:
-    * [] board
-    * [] scoreboard
-    * [] winning message
-    * [] winning effect?
+* [x] confirm game is functioning properly again 
+* [x] complete styling:
+    * [x] board
+    * [x] scoreboard
+    * [x] winning message
+    * [-] winning effect?
 

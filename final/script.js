@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 playerTwoScore++ 
                 displayOneSc.innerText = `Player One: ${playerOneScore}`
                 displayTwoSc.innerText = `Player Two: ${playerTwoScore}`
+            }else if(allsq[x].classList.contains('invalid')){
+                winner.innerHTML = 'Its a Tie Game!'
             }
         }
     }
