@@ -15,11 +15,11 @@ h1{
 }
 @keyframes blinkingText{
     0%{     color: rgb(24, 192, 192);    }
-    20%{    color:rgb(2, 2, 0)}
-    45%{    color: rgb(216, 204, 92); }
-    66%{    color: rgb(56, 54, 173); }
-    85%{    color:rgb(250, 249, 246);  }
-    100%{   color: rgb(31, 199, 241);    }
+    20%{    color:rgb(245, 1, 1)}
+    45%{    color: rgb(212, 227, 248); }
+    66%{    color: rgb(255, 233, 32); }
+    85%{    color:rgb(248, 20, 20);  }
+    100%{   color: rgb(31, 210, 255);    }
 }
 li{
     text-decoration: underline;
