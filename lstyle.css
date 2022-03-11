@@ -24,11 +24,13 @@ body{
 }
 #button{
     color: whitesmoke;
+    padding-left: -7px;
+    padding-top: 3px;
     background-color: rgba(247, 246, 248, 0.836);
-    border-radius: 12px;
-    width: 100px;
+    border-radius: 13px;
+    width: 88px;
     height: 30px;
     display: flex;
-    margin-left: 50%;
+    margin-left: 45%;
     margin-right: 50%;
 }
