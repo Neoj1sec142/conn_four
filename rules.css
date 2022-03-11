@@ -1,8 +1,8 @@
 body{
     background-image: url('https://colors.dopely.top/inside-colors/wp-content/uploads/2021/06/colorful-backgrounds-11.jpg');
     text-align: center;
-    color:rgb(250, 249, 246);
-    text-shadow: rgb(21, 255, 0) 4px 0 10px;
+    color:rgb(18, 250, 38);
+    text-shadow: rgb(255, 0, 0) 4px 0 10px;
 }
 
 img{
@@ -11,6 +11,7 @@ img{
 }
 h1{
     text-decoration: underline;
+    text-shadow: rgb(247, 223, 223) 10px 0 15px;
     animation:blinkingText 1.2s infinite;
 }
 @keyframes blinkingText{
