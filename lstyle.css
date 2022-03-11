@@ -4,7 +4,7 @@ body{
     background-repeat: repeat-y;
     background-size: 100%;
 }
-.message{
+.message h1, h2, h3, h4{
     color: whitesmoke;
     text-align: center;
     font-size: 3em;
