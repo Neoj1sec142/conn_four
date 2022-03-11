@@ -38,17 +38,17 @@
 * [] add scoreboard functionality
 *** 
 ### WED 
-* [] research ways to reduce code and write better
+* [x] research ways to reduce code and write better
     * ...
-* [] apply reduction
-* [] research animation methods
-* [] start to apply animation methods 
+* [x] apply reduction
+* [x] research animation methods
+* [x] start to apply animation methods 
 ***
 ### THURS
-* [] complete animation methods or make the decision to not use them
-    * animations? [y\N]
-* [] correct and confirm functionality
-* [] move to styling
+* [x] complete animation methods or make the decision to not use them
+    * animations? [y]
+* [x] correct and confirm functionality
+* [x] move to styling
 ***
 ### FRI
 * [] confirm game is functioning properly again 
