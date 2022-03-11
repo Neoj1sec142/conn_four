@@ -102,12 +102,24 @@ h3{
     color: rgb(255, 215, 0);
     font-size: 20px; 
 }
+#home{
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(1, 0, 2, 0.726);
+    margin-left: 25%; 
+    margin-right: 25%;
+}
+#home:hover{
+    background-color: rgb(155, 250, 14);
+    color: rgb(63, 2, 119); 
+}
 #reset{
     border-radius: 10px;
     background-color: rgba(1, 0, 2, 0.726);
     color: white;
     margin-left: 25%; 
     margin-right: 25%;
+    margin-top: 9px;
 }
 #reset:hover{
     background-color: rgb(155, 250, 14);
@@ -120,7 +132,7 @@ h3{
     border-radius: 10px;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 15px;
+    margin-top: 8px;
     margin-bottom: 15px;
     max-width: fit-content;
 }

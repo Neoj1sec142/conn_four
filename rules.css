@@ -1,0 +1,20 @@
+body{
+    background-color: aqua;
+    text-align: center;
+}
+img{
+    padding-top: 50px;
+    width: 400px;
+}
+h1{
+    text-decoration: underline;
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(24, 192, 192);    }
+    20%{    color:rgb(2, 2, 0)}
+    45%{    color: rgb(216, 204, 92); }
+    66%{    color: rgb(56, 54, 173); }
+    85%{    color:rgb(250, 249, 246);  }
+    100%{   color: rgb(31, 199, 241);    }
+}
