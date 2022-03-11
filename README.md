@@ -16,6 +16,8 @@
 ***
 >6 down 7 across
 ***
+ <!-- Below is the link to my trello board -->
+    https://trello.com/b/D5gEpUDO/connect-four
  <!-- Below is a link to my references for this project -->
     https://www.youtube.com/watch?v=aroYjgQH8Tw 
 ## (*REVISED*) PLAN:
