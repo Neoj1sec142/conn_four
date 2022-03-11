@@ -1,7 +1,10 @@
 body{
-    background-color: aqua;
+    background-image: url('https://colors.dopely.top/inside-colors/wp-content/uploads/2021/06/colorful-backgrounds-11.jpg');
     text-align: center;
+    color:rgb(250, 249, 246);
+    text-shadow: rgb(21, 255, 0) 4px 0 10px;
 }
+
 img{
     padding-top: 50px;
     width: 400px;
@@ -17,4 +20,7 @@ h1{
     66%{    color: rgb(56, 54, 173); }
     85%{    color:rgb(250, 249, 246);  }
     100%{   color: rgb(31, 199, 241);    }
+}
+li{
+    text-decoration: underline;
 }
