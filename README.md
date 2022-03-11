@@ -16,6 +16,8 @@
 ***
 >6 down 7 across
 ***
+ <!-- Below is a link to my references for this project -->
+    https://www.youtube.com/watch?v=aroYjgQH8Tw 
 ## (*REVISED*) PLAN:
 * [x] Set up basic board in grid
 * [x] Attain basic JS functionality
